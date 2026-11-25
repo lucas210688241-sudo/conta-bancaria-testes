@@ -13,17 +13,10 @@ C# (.NET) e xUnit.
 ## Testes implementados
 
 ### Conta (Lucas)
-- Criar conta com titular "Lucas" e saldo 100: titular e saldo são guardados.
-- Depositar 50 em saldo 100: novo saldo é 150.
-- Depositar -10: gera ArgumentException.
-- Sacar 30 de saldo 100: novo saldo é 70.
-- Sacar 200 de saldo 100: gera SaldoInsuficienteException e o saldo continua 100.
-- Criar conta sem titular: gera ArgumentException.
+A preencher.
 
 ### Transferência (Eduardo)
-- Transferir 50 de conta com 100 para conta com 0: origem fica com 50 e destino com 50.
-- Transferir 50 de conta com 20: gera SaldoInsuficienteException e as duas contas não mudam.
-- Transferir para a mesma conta: gera ArgumentException.
+A preencher.
 
 ### Rendimento (João)
 A preencher.
