@@ -28,6 +28,7 @@ public class ContaTests
         var conta = new Conta("Lucas", 100m);
 
         Assert.Throws<ArgumentException>(() => conta.Depositar(-10m));
+        Assert.Equal(100m, conta.Saldo);
     }
 
     [Fact]
@@ -45,5 +46,11 @@ public class ContaTests
 
         Assert.Throws<SaldoInsuficienteException>(() => conta.Sacar(200m));
         Assert.Equal(100m, conta.Saldo);
+    }
+
+    [Fact]
+    public void CriarConta_SemTitular_GeraErro()
+    {
+        Assert.Throws<ArgumentException>(() => new Conta("", 100m));
     }
 }
